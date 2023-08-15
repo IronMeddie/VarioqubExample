@@ -33,7 +33,7 @@ fun MainNavHost() {
                 when (flag) {
                     "first" -> {
                         navController.navigateToPurchase1()
-                    } // переносим пользователя на нужный экран в зависимости от флага
+                    }                                                   // переносим пользователя на нужный экран в зависимости от флага
                     "second" -> {
                         navController.navigateToPurchase2()
                     }
@@ -52,8 +52,8 @@ fun MainNavHost() {
         navigation(
             startDestination = Screens.PurchaseA1,
             route = Screens.PurchaseScreen1
-        ) {// есть две вложенные навигации по экранам оплаты
-            composable(route = Screens.PurchaseA1) {                                         // будет показываться одна из них в зависимости от полученого флага Varioqub
+        ) {                                          // есть две вложенные навигации по экранам оплаты
+            composable(route = Screens.PurchaseA1) { // будет показываться одна из них в зависимости от полученого флага Varioqub
                 Purchase_A1 {
                     navController.toA2()
                 }
@@ -68,7 +68,7 @@ fun MainNavHost() {
         navigation(
             startDestination = Screens.PurchaseB1,
             route = Screens.PurchaseScreen2
-        ) {// есть две вложенные навигации по экранам оплаты
+        ) {                                       // есть две вложенные навигации по экранам оплаты
             composable(route = Screens.PurchaseB1) {
                 Purchase_B1 {
                     navController.toB2()
