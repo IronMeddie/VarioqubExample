@@ -28,8 +28,8 @@ fun MainNavHost() {
                 val flag = Varioqub.getString(
                     "PurchaseVariant",
                     "first"
-                )  // получаем флаг какой из вариантов показывать
-                Log.d("VARIOQUB flag buttonPosition ", flag)
+                )                                               // получаем флаг какой из вариантов показывать
+
                 when (flag) {
                     "first" -> {
                         navController.navigateToPurchase1()
