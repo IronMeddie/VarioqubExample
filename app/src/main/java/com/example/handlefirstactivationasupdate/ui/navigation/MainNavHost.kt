@@ -58,7 +58,7 @@ fun MainNavHost() {
                     navController.toB2()
                 }
             }
-            composable(route = Screens.PurchaseA2) {
+            composable(route = Screens.PurchaseB2) {
                 Purchase_A1 {
                     navController.navigateToMainScreen()
                 }
