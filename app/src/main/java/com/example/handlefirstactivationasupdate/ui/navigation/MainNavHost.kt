@@ -69,7 +69,7 @@ fun MainNavHost() {
             startDestination = Screens.PurchaseB1,
             route = Screens.PurchaseScreen2
         ) {// есть две вложенные навигации по экранам оплаты
-            composable(route = Screens.PurchaseA1) {
+            composable(route = Screens.PurchaseB1) {
                 Purchase_B1 {
                     navController.toB2()
                 }
