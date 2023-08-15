@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<defaults client_id="appmetrica.4436797" config_id="65" config_version="3">
+	<entry>
+		<key>test</key>
+		<value>true</value>
+	</entry>
+	<entry>
+		<key>buttonPosition</key>
+		<value>top</value>
+	</entry>
+</defaults>
