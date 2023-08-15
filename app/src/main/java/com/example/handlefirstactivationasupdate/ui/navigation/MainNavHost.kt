@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
@@ -16,6 +17,7 @@ import com.example.handlefirstactivationasupdate.ui.screens.purchase.Purchase_A1
 import com.example.handlefirstactivationasupdate.ui.screens.purchase.Purchase_A2
 import com.example.handlefirstactivationasupdate.ui.screens.purchase.Purchase_B1
 import com.example.handlefirstactivationasupdate.ui.screens.purchase.Purchase_B2
+import com.yandex.metrica.YandexMetrica
 import com.yandex.varioqub.config.Varioqub
 
 @Composable
@@ -61,6 +63,7 @@ fun MainNavHost() {
             composable(route = Screens.PurchaseA2) {
                 Purchase_A2 {
                     navController.navigateToMainScreen()
+                    YandexMetrica.reportEvent("Действие совершено")    // событие, которое будет метрикой эксперимента. Этот код здесь просто для примера.
                 }
             }
 
@@ -77,6 +80,7 @@ fun MainNavHost() {
             composable(route = Screens.PurchaseB2) {
                 Purchase_B2 {
                     navController.navigateToMainScreen()
+                    YandexMetrica.reportEvent("Действие совершено")    // событие, которое будет метрикой эксперимента
                 }
             }
         }
